@@ -1,0 +1,58 @@
+.servicesContainer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--color-black); /* Fallback */
+}
+
+.panelsContainer {
+  display: flex;
+  width: 300vw; /* 100vw * 3 panels */
+  height: 100%;
+}
+
+.panel {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  padding: var(--section-padding);
+}
+
+.panelBlue {
+  background-color: var(--color-accent-blue);
+}
+
+.panelOrange {
+  background-color: var(--color-accent-orange);
+}
+
+.panelPurple {
+  background-color: var(--color-accent-purple);
+}
+
+.panelContent {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.indicator {
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 0.6;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  padding-bottom: 12px;
+  width: max-content;
+}
+
+.description {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  max-width: 600px;
+}

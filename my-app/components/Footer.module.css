@@ -1,0 +1,102 @@
+.footer {
+  background-color: #050505; /* very dark gray / black */
+  color: var(--color-white);
+  padding: 100px 5% 40px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.brand {
+  max-width: 300px;
+}
+
+.brandDesc {
+  color: #a0a0a0;
+  margin-top: 16px;
+  font-size: 1.1rem;
+}
+
+.linksContainer {
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.col h4 {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.col a {
+  color: #a0a0a0;
+  transition: color 0.2s ease;
+}
+
+.col a:hover {
+  color: var(--color-white);
+}
+
+.divider {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 40px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.locations {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.location {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.flag {
+  font-size: 1.5rem;
+}
+
+.location h5 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.location p {
+  color: #a0a0a0;
+  font-size: 0.9rem;
+}
+
+.copyright {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .top {
+    flex-direction: column;
+  }
+}

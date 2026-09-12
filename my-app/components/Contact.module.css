@@ -1,0 +1,101 @@
+.contactSection {
+  padding: var(--section-padding);
+  background-color: var(--color-bg);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  gap: 80px;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.ctaCard {
+  background-color: var(--color-white);
+  padding: 40px;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.02);
+}
+
+.ctaCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.ctaCard p {
+  color: var(--color-text-secondary);
+  margin-bottom: 24px;
+}
+
+.right {
+  flex: 1.2;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.accordionItem {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.accordionItem.active {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border-color: var(--color-black);
+}
+
+.accordionHeader {
+  width: 100%;
+  text-align: left;
+  padding: 24px;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: inherit;
+}
+
+.icon {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+
+.active .icon {
+  color: var(--color-black);
+}
+
+.accordionContent {
+  /* handled by GSAP, but starts hidden except first */
+}
+
+.answerText {
+  padding: 0 24px 24px 24px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+}
